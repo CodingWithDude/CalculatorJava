@@ -28,7 +28,7 @@ public class ButtonPanel extends JPanel {
     ButtonPanel() {
 
         this.setLayout(new GridLayout(5, 4));
-        this.setSize(450, 500);
+        this.setBounds(10, 155, 450, 500);
         this.setVisible(true);
 
         clearButton = new Button(new JButton("C"), "C");

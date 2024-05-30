@@ -1,25 +1,24 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Calculator extends JFrame implements ActionListener {
+public class Calculator extends JFrame {
 
-    JLabel primaryDisplayLabel;
-    JLabel secondaryDisplayLabel;
-    String primaryDisplayText;
-    String secondaryDisplayText;
+
     ButtonPanel buttonPanel;
+    TextPanel textPanel;
 
     Calculator() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Calculator");
-        this.setLayout(new FlowLayout());
+        this.setLayout(null);
         this.setLocationRelativeTo(null);
-        this.setSize(600, 700);
+        this.setSize(470, 700);
         this.getContentPane().setBackground(Color.black);
 
+        textPanel = new TextPanel();
         buttonPanel = new ButtonPanel();
+
+        this.add(textPanel);
         this.add(buttonPanel);
         this.setVisible(true);
     }
@@ -60,9 +59,4 @@ public class Calculator extends JFrame implements ActionListener {
 
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
-
-    }
 }
