@@ -9,56 +9,60 @@ public class Calculator extends JFrame implements ActionListener {
     JLabel secondaryDisplayLabel;
     String primaryDisplayText;
     String secondaryDisplayText;
+    ButtonPanel buttonPanel;
 
-    Calculator(){
+    Calculator() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Calculator");
         this.setLayout(new FlowLayout());
         this.setLocationRelativeTo(null);
-        this.setSize(500, 600);
+        this.setSize(600, 700);
         this.getContentPane().setBackground(Color.black);
 
+        buttonPanel = new ButtonPanel();
+        this.add(buttonPanel);
         this.setVisible(true);
     }
 
-    public double add(double a, double b){
+    public double add(double a, double b) {
         return a + b;
     }
 
-    public double subtract(double a, double b){
+    public double subtract(double a, double b) {
         return a - b;
     }
 
-    public double multiply(double a, double b){
+    public double multiply(double a, double b) {
         return a * b;
     }
 
-    public double divide(double a, double b){
+    public double divide(double a, double b) {
         return a / b;
     }
 
-    public double modulo(double a, double b){
+    public double modulo(double a, double b) {
         return a % b;
     }
 
-    public void updateTextLabel(){
+    public void updateTextLabel() {
 
     }
 
-    public void clearEntry(){
+    public void clearEntry() {
 
     }
 
-    public void clear(){
+    public void clear() {
 
     }
 
-    public void equal(){
+    public void equals() {
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
 
     }
 }
