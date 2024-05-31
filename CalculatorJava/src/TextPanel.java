@@ -26,7 +26,14 @@ public class TextPanel extends JPanel {
         this.setBackground(Color.black);
         this.setLayout(null);
 
+    }
 
+    public void setPrimaryDisplayLabel(String text) {
+        primaryDisplayLabel.setText(text);
+    }
+
+    public void setSecondaryDisplayLabel(String text) {
+        secondaryDisplayLabel.setText(text);
     }
 
 }

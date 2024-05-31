@@ -1,11 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Button {
     JButton myButton;
     String buttonType;
+
 
     Button(JButton myButton, String buttonType) {
         this.myButton = myButton;
@@ -23,13 +22,6 @@ public class Button {
         if (this.myButton.getText().matches("C")) {
             this.myButton.setBackground(new Color(146, 1, 2));
         }
-
-        this.myButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println(myButton.getText());
-            }
-        });
 
     }
 
